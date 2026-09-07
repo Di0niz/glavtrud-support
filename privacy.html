@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glavtrud — privacy policy</title>
+<meta name="description" content="Glavtrud collects nothing. No permissions, no network, everything stays on your Mac.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <p class="kicker">Glavtrud · version 1.0</p>
+    <h1>Privacy policy</h1>
+    <p class="lead">Last updated: September 7, 2026.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <h2>In short</h2>
+    <p><strong>Glavtrud collects nothing about you.</strong> Everything the app counts stays on your computer. The app has no network entitlement and could not send anything anywhere even if it wanted to. The developer receives nothing from it.</p>
+
+    <h2>What the app reads</h2>
+    <p>Glavtrud counts your input activity in order to show it back to you as a labor record. It reads:</p>
+    <ul>
+      <li><strong>aggregate system event counters</strong> — how many key presses, clicks, scrolls and mouse movements have occurred. This uses the public system call <code>CGEventSource.counterForEventType</code>, which returns the number of events, not their content;</li>
+      <li><strong>the bundle identifier of the frontmost application</strong> — to show which programs the time went to;</li>
+      <li><strong>the time</strong> of those events, to the minute.</li>
+    </ul>
+
+    <h2>What the app does not read</h2>
+    <ul>
+      <li><strong>Which keys you pressed.</strong> The program physically cannot see them: it does not use <code>CGEventTap</code> and does not request the Input Monitoring permission, without which key content is unavailable.</li>
+      <li><strong>Window titles, page addresses, document contents, the clipboard.</strong> That would require the Accessibility permission, which the app does not request.</li>
+      <li><strong>The screen image.</strong> Screen recording permission is not requested.</li>
+      <li><strong>Your name, email, device identifiers, location.</strong></li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>The app requests <strong>no</strong> system permissions at all.</p>
+
+    <h2>Where the data is stored</h2>
+    <p>In an SQLite file on your computer:</p>
+    <p><code>~/Library/Containers/com.di0niz.glavtrud/Data/Library/Application Support/Glavtrud/</code></p>
+    <p>The file is not encrypted and is not uploaded anywhere by the app. It will end up in your backups if you back up your home folder, like any other file.</p>
+
+    <h2>Sharing with third parties</h2>
+    <p>None. The app has no network entitlements, contacts no servers, and uses no analytics, advertising, crash reporting or third-party SDKs.</p>
+
+    <h2>How to delete your data</h2>
+    <p>Right-click the menu bar icon → Settings → "Delete all records…". The shifts, the record and the workshop assignments are gone for good; counting continues from that minute.</p>
+    <p>To remove everything, delete the directory above, or the app together with its container. No copies exist anywhere outside your computer.</p>
+
+    <h2>Export</h2>
+    <p>The app can export a CSV report. It saves the file wherever you point it. What happens to that file afterwards is up to you; the app never touches it again.</p>
+
+    <h2>Children</h2>
+    <p>The app is not directed at children and collects no data about anyone, children included.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, a new date and a description of the change will appear here.</p>
+
+    <h2>Contact</h2>
+    <p>Privacy questions: <a href="https://github.com/Di0niz/glavtrud-support/issues">open an issue</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="index.html">Glavtrud</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

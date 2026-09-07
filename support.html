@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glavtrud — support</title>
+<meta name="description" content="Support for Glavtrud, a menu bar labor record for macOS: how to get help, common questions, where the data lives.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <p class="kicker">Glavtrud</p>
+    <h1>Support</h1>
+    <p class="lead">Questions, bug reports and feature requests are all welcome.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <h2>How to reach us</h2>
+    <p><a href="https://github.com/Di0niz/glavtrud-support/issues">Open an issue on GitHub</a> — the fastest way, and other people can see the answer.</p>
+
+    <h2>The numbers are empty</h2>
+    <p>The app counts from the moment it starts, and a minute counts as active only if some input happened in it. The first numbers appear after a few minutes of real work. The quota is assigned after five worked shifts; until then the app is on probation and shows no quota at all.</p>
+
+    <h2>Where is my data</h2>
+    <p>In a single SQLite file inside the app's own container:</p>
+    <p><code>~/Library/Containers/com.di0niz.glavtrud/Data/Library/Application Support/Glavtrud/</code></p>
+    <p>Nothing is sent anywhere. The app has no network entitlement, so it could not send anything even if it wanted to.</p>
+
+    <h2>How to export or erase everything</h2>
+    <p>Right-click the menu bar icon. <strong>Labor report, CSV…</strong> writes the whole record wherever you point it. <strong>Settings → Delete all records…</strong> erases the shifts, the record and the workshop assignments for good; counting continues from that minute.</p>
+
+    <h2>Why does it not see my work</h2>
+    <p>The app counts input events, not thinking. Reading, watching and meetings produce no keystrokes and no clicks, so they produce a shortfall — and that shortfall is correct. Glavtrud measures input load, not the value of your work.</p>
+
+    <h2>Where is the window</h2>
+    <p>There is none at launch: Glavtrud lives in the menu bar and has no Dock icon. Left-click the icon for the shift card, right-click for the menu, "Open personal file" for the full report.</p>
+
+    <h2>Privacy</h2>
+    <p>The app requests no system permissions and reads aggregate event counters, never the content of your input. See the <a href="privacy.html">privacy policy</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="index.html">Glavtrud</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

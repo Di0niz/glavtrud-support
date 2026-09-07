@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glavtrud — a labor record for your Mac</title>
+<meta name="description" content="A menu bar record of your input activity: active minutes, typing speed, focus streaks and a quota you set by working. No permissions, no network.">
+<meta property="og:title" content="Glavtrud — a labor record for your Mac">
+<meta property="og:description" content="Active minutes, typing speed, focus streaks and a quota you set by working. Nothing leaves your Mac.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <p class="kicker">Glavtrud · record card</p>
+    <h1>Your day at the machine, kept as a labor record</h1>
+    <p class="lead">A menu bar app for macOS. It counts your own input activity and shows it back as an accounting form: active minutes, typing speed, focus streaks, and a quota you set by working.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <h2>What it measures</h2>
+    <ul>
+      <li><strong>Active minutes</strong> — minutes in which you actually typed, clicked or scrolled, counted one by one.</li>
+      <li><strong>Typing speed</strong> — characters per minute inside typing bursts, with pauses of two seconds and longer excluded.</li>
+      <li><strong>Focus streak</strong> — the longest unbroken block of work in a shift.</li>
+      <li><strong>Workshops</strong> — how the shift split between core labor and auxiliary work, by application. You declare what counts as core.</li>
+      <li><strong>A quota you set by working</strong> — the median of your own last thirty shifts, rounded to a quarter of an hour.</li>
+    </ul>
+
+    <img class="shot" src="assets/record-card.png" alt="The Glavtrud report window: quota, median active minutes, typing speed, focus streak and a year of shifts.">
+
+    <h2>Privacy, in concrete terms</h2>
+    <ul>
+      <li>No permissions are requested. Not Accessibility, not Input Monitoring, not Screen Recording.</li>
+      <li>Key codes are physically unavailable to the app: it reads aggregate system event counters, never event content, and contains no event tap.</li>
+      <li>No network entitlement. No analytics, no accounts, no third-party SDKs.</li>
+      <li>Everything is stored in one SQLite file inside the app's own container. Export it to CSV or erase it at any time.</li>
+    </ul>
+    <p><a href="privacy.html">Full privacy policy</a></p>
+
+    <h2>What it is not</h2>
+    <p>This app measures input load, not productivity. An hour of thinking about architecture produces a shortfall, and that is a correct shortfall. The quota is a frame for accounting, not a judgement of your work.</p>
+
+    <h2>Help</h2>
+    <p>Questions, bug reports and feature requests: <a href="https://github.com/Di0niz/glavtrud-support/issues">open an issue</a>. More on the <a href="support.html">support page</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Requires macOS 14 or later. Glavtrud is a fictional labor bureau; the theme is aesthetic and takes no political position.</p>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
